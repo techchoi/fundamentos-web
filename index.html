@@ -1,47 +1,231 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Perfil</title>
+    <link rel="stylesheet" href="assets/img/css/style.css">
+
 </head>
+
 <body>
-    <ul>
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img src="assets/img/slide1.jpg" alt="Primeiro slide">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/abrace-um-coreacao.png" alt="Segundo slide">
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <ul id="menu">
         <li>
-           <a href="index.html"> Home </a> 
+            <a href="index.html"> Home </a>
         </li>
         <li>
-            <a href="contato.html"> Contato </a> 
-         </li>
+            <a href="contato.html"> Contato </a>
+        </li>
     </ul>
-    <h1> Sobre a Nina Choi </h1>
+    <h1 class="center"> Sobre a Nina Choi </h1>
+    <div class="container">
+        <img class="br-50 wh-300 p-30" src="assets/img/nina.jpg" alt="Minha foto" width="250" height="250">
+
+        <div class="p-30">
+            <p class="justify">
+                Nina Choi at age 20 she created her first startup, where she received recognition for entrepreneurship.
+                Her professional experience includes sales management positions, as well as financial administration in
+                the
+                Boticário group. Great technology enthusiast, always looking for knowledge and training in the area.
+            </p>
+            <p class="justify">
+                Nina Choi at age 20 she created her first startup, where she received recognition for entrepreneurship.
+                Her professional experience includes sales management positions, as well as financial administration in
+                the
+                Boticário group. Great technology enthusiast, always looking for knowledge and training in the area.
+            </p>
+
+        </div>
+
+
+        <div>
+
+        </div>
+
+
+
+    </div>
 
     <p>
-        Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris.Delegadis gente finis, bibendum egestas augue arcu ut est.Quem num gosta di mim que vai caçá sua turmis!Diuretics paradis num copo é motivis de denguis.
+        Nina Hee Jin Choi é uma estudante de análise e desenvolvimento de sistemas, tem 28 anos, é descendente de sul
+        coreanos e tem o sonho de se tornar uma referência em TI.
+
     </p>
 
-    <p>
-        Copo furadis é disculpa de bebadis, arcu quam euismod magna.Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.
-    </p>
 
-    <img src="assets/img/nina.jpg" alt="Minha foto">
+    <h2 class="center">Meu video predileto</h2>
+    <div class="container mb-50">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dtfaccGmCCs" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
 
-    <h2>Meu video predileto</h2>
 
-    <iframe 
-    width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/dtfaccGmCCs" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
-       
-        
-   
+    <div class="row">
+        <!-- Ajuda a definir as colunas -->
+        <div class="col-md-4 col-sm-12">
+            <h1> Nina Hee Jin Choi </h1>
+            <h6>Universidade Nove de Julho - Análise de Desenvolvimento de Sistemas</h6>
+
+        </div>
+        <div class="col-md-7 col-sm-12">
+            <h2>Experiências Prévias</h2>
+            <h6>Consulado Geral da Rep. Da Coréia (Julho 2019 - Janeiro de 2021)</h6>
+            <p>No consulado Geral da República da Coreia atuei no cargo administrativo, sendo responsável por todo o
+                escritório,
+                desde, notas fiscais, compras, negociações, redução de custo, contas a pagar, controle de funcionários,
+                trâmite de
+                documentação e entre outras atividades.</p>
+            <h6>Modas Gio (Dezembro 2018 - Maio 2019)</h6>
+            <p>Modas Gio é uma empresa de confecção em atacado de moda feminina. No cargo de gerente fui responsável por
+                administração dos funcionários, controle de caixa e de estoque, negociação com clientes, contas a pagar,
+                cadastro
+                de produtos, cobrança, emissão de nota fiscal e atendimento ao cliente.
+            </p>
+        </div>
+    </div>
+
+    <h2>Habilidades</h2>
+    <div class="row">
+        <div class="col">
+
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <h2>Formação</h2>
+    <div class="row">
+        <div class="col">
+            <div class="accordion" id="meuacordeon">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Educação
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#meuacordeon">
+                        <div class="accordion-body">
+                            <p>Universidade Nove de Julho: Análise de Desenvolvimento de Sistemas (01/01/2021 -
+                                01/08/2023)</p>
+                            <p>Bootcamp Generation (22/08/2022 - 23/11/2022) </p>
+                            <p>Universidade Anhembi Morumbi: Marketing (17/08/2015 - 01/02/2016);</p>
+                            <p>Curso Trade School: Overseas Korean Trade Association (2014);</p>
+                            <p>Curso Descola: Economia Colaborativa (2018);</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            Sistemas de Informação
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#meuacordeon">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dicta veniam quibusdam
+                                eligendi? Quis,
+                                eum? Mollitia molestias facilis ut sint? Voluptas commodi quisquam itaque numquam
+                                nostrum praesentium
+                                ab mollitia dolorum.</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </section>
+    <hr> <!-- Separa seção -->
+    <footer>
+        <div class="container">
+            <a href="https://www.linkedin.com/in/choinina/" target="_blank">
+                <img class="tm-social p-30" src="assets/img/linkedin.png" alt="Logo do linkedin">
+
+            </a>
+            <a href="https://github.com/techchoi" target="_blank">
+                <img class="tm-social p-30" src="assets/img/github.png" alt="Logo do github">
+
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=K5UoJesS_xQ" target="_blank">
+                <img class="tm-social p-30" src="assets/img/youtube.png" alt="Logo do youtube">
+            </a>
+
+
+        </div>
+        <p class="center">&copy; 2022 - Desenvolvido por Nina Choi</p>
+    </footer>
+
+
 
 
 </body>
+
 </html>
